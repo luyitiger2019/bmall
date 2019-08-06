@@ -1,4 +1,4 @@
-package com.ty.bmall;
+package com.ty.bmall.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
