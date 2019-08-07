@@ -1,10 +1,10 @@
-package com.ty.bmall.user.controller;
+package com.ty.bmall.controller;
 
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.ty.bmall.user.bean.UmsMember;
-import com.ty.bmall.user.bean.UmsMemberReceiveAddress;
-import com.ty.bmall.user.service.UserService;
+import com.ty.bmall.bean.UmsMember;
+import com.ty.bmall.bean.UmsMemberReceiveAddress;
+import com.ty.bmall.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

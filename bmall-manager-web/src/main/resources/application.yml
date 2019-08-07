@@ -1,0 +1,27 @@
+server:
+  port: 8081
+#jdbc
+spring:
+  #dubbo的配置
+  dubbo:
+    #dubbo中的服务名称
+    application: manager-web
+    #dubbo的服务地址
+    registry:
+      address: 192.168.1.132:2181
+      #zookeeper协议的名称
+      protocol: zookeeper
+    #dubbo的通讯协议名称
+    protocol:
+      name: dubbo
+    #dubbo服务扫描路径
+    base-package: com.ty.bmall
+    # 设置超时时间
+    consumer:
+      timeout: 60000
+      check: false
+    # 设置是否检查服务存在
+#日志级别
+logging:
+  level:
+    root: debug

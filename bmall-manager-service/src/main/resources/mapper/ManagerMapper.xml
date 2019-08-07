@@ -2,10 +2,10 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ty.bmall.mapper.UserMember">
+<mapper namespace="com.ty.bmall.mapper.PmsBaseCatalogMapper1">
     
-    <select id="selectAllUser" resultType="com.ty.bmall.bean.UmsMember">
-        select t.*  from ums_member t
+    <select id="selectAllUser" resultType="com.ty.bmall.bean.PmsBaseCatalog1">
+        select t.*  from  pms_base_catalog1 pms1
     </select>
 
 </mapper>

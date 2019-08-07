@@ -1,4 +1,4 @@
-package com.ty.bmall.user.bean;
+package com.ty.bmall.bean;
 
 import javax.persistence.Id;
 import java.io.Serializable;
