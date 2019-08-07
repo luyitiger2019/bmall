@@ -1,11 +1,11 @@
 server:
-  port: 8080
+  port: 8081
 #jdbc
 spring:
   #dubbo的配置
   dubbo:
     #dubbo中的服务名称
-    application: user-web
+    application: manager-web
     #dubbo的服务地址
     registry:
       address: 192.168.1.132:2181
@@ -24,8 +24,4 @@ spring:
 #日志级别
 logging:
   level:
-<<<<<<< HEAD
-    root: debug
-=======
     root: info
->>>>>>> ty_bmall_1

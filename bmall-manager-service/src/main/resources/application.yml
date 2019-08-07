@@ -1,5 +1,5 @@
 server:
-  port: 8171
+  port: 8172
 #jdbc
 spring:
   datasource:
@@ -9,7 +9,7 @@ spring:
 #dubbo的配置
   dubbo:
     #dubbo中的服务名称
-    application: user-service
+    application: manager-service
     #dubbo的服务地址
     registry:
       address: 192.168.1.132:2181
@@ -25,19 +25,19 @@ mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
   configuration:
     map-underscore-to-camel-case: true
-<<<<<<< HEAD
-<<<<<<< HEAD
+<<<<<<< HEAD:bmall-user/src/main/resources/application.yml
+<<<<<<< HEAD:bmall-user/src/main/resources/application.yml
 =======
 #日志级别
 logging:
   level:
      root: debug
 
->>>>>>> parent of 0ac4fb5... 完成DUBBO调整
+>>>>>>> parent of 0ac4fb5... 完成DUBBO调整:bmall-manager-service/src/main/resources/application.yml
 =======
 #日志级别
 logging:
   level:
     root: info
 
->>>>>>> ty_bmall_1
+>>>>>>> ty_bmall_1:bmall-manager-service/src/main/resources/application.yml

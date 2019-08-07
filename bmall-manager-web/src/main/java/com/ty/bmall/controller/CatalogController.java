@@ -7,7 +7,10 @@ import com.ty.bmall.bean.PmsBaseCatalog3;
 import com.ty.bmall.service.CatalogService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.RequestBody;
+=======
+>>>>>>> ty_bmall_1
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -27,14 +30,22 @@ public class CatalogController {
     }
     @RequestMapping("getCatalog2")
     @ResponseBody
+<<<<<<< HEAD
     public List<PmsBaseCatalog2> getCatalog2(@RequestBody String catalog1Id)
+=======
+    public List<PmsBaseCatalog2> getCatalog2(String catalog1Id)
+>>>>>>> ty_bmall_1
     {
         List<PmsBaseCatalog2> cataLogs2=catalogService.getCatalog2(catalog1Id);
         return cataLogs2;
     }
     @RequestMapping("getCatalog3")
     @ResponseBody
+<<<<<<< HEAD
     public List<PmsBaseCatalog3> getCatalog3(@RequestBody String catalog2Id)
+=======
+    public List<PmsBaseCatalog3> getCatalog3(String catalog2Id)
+>>>>>>> ty_bmall_1
     {
         List<PmsBaseCatalog3> cataLogs3=catalogService.getCatalog3(catalog2Id);
         return cataLogs3;

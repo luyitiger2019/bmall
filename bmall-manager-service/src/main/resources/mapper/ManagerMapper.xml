@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ty.bmall.mapper.PmsBaseCatalogMapper1">
+
+    <select id="selectAllCataLog" resultType="com.ty.bmall.bean.PmsBaseCatalog1">
+        select t.*  from  pms_base_catalog1 pms1
+    </select>
+</mapper>
