@@ -11,3 +11,11 @@ mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
   configuration:
     map-underscore-to-camel-case: true
+<<<<<<< HEAD:bmall-user/src/main/resources/application.yml
+=======
+#日志级别
+logging:
+  level:
+     root: debug
+
+>>>>>>> parent of 0ac4fb5... 完成DUBBO调整:bmall-manager-service/src/main/resources/application.yml
