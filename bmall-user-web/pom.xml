@@ -8,7 +8,7 @@
         <artifactId>bmall-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>bmall-user</artifactId>
+    <artifactId>bmall-user-web</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.yt.bmall</groupId>
@@ -17,12 +17,11 @@
         </dependency>
         <dependency>
             <groupId>com.yt.bmall</groupId>
-            <artifactId>bmall-user-service</artifactId>
+            <artifactId>bmall-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
-
     </dependencies>
+
 
 
 </project>
