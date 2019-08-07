@@ -25,14 +25,18 @@ public class PmsCatalogServiceImpl implements CatalogService {
     }
 
     @Override
-    public List<PmsBaseCatalog2> getCatalog2() {
-        List<PmsBaseCatalog2> pmsBaseCatalog2s = pmsBaseCatalogMapper2.selectAll();
+    public List<PmsBaseCatalog2> getCatalog2(String catalog1Id) {
+        PmsBaseCatalog2 pmsBaseCatalog2 = new PmsBaseCatalog2();
+        pmsBaseCatalog2.setCatalog1Id(catalog1Id);
+        List<PmsBaseCatalog2> pmsBaseCatalog2s = pmsBaseCatalogMapper2.select(pmsBaseCatalog2);
         return pmsBaseCatalog2s;
     }
 
     @Override
-    public List<PmsBaseCatalog3> getCatalog3() {
-        List<PmsBaseCatalog3> pmsBaseCatalog3s = pmsBaseCatalogMapper3.selectAll();
+    public List<PmsBaseCatalog3> getCatalog3(String catalog2Id) {
+        PmsBaseCatalog3 pmsBaseCatalog3 = new PmsBaseCatalog3();
+        pmsBaseCatalog3.setCatalog2Id(catalog2Id);
+        List<PmsBaseCatalog3> pmsBaseCatalog3s = pmsBaseCatalogMapper3.select(pmsBaseCatalog3);
         return pmsBaseCatalog3s;
     }
 }
