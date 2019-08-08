@@ -12,4 +12,6 @@ public interface AttrService {
     List<PmsBaseAttrInfo> attrInfoList(String catalogId);
 
     List<PmsBaseAttrValue> attrValueList(String attrId);
+
+    String saveAttInfo(PmsBaseAttrInfo attrInfo);
 }
