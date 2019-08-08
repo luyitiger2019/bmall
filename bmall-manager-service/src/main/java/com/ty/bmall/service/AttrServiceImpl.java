@@ -1,7 +1,6 @@
 package com.ty.bmall.service;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.ty.bmall.bean.PmsBaseAttrInfo;
 import com.ty.bmall.bean.PmsBaseAttrValue;
 import com.ty.bmall.mapper.PmsBaseAttrInfoMapper;
@@ -76,6 +75,7 @@ public class AttrServiceImpl implements AttrService {
             //删除后将新的属性值插入
             for (PmsBaseAttrValue pmsBaseAttrValue : attrValueList) {
                 // pmsBaseAttrValue.setAttrId(null);
+                pmsBaseAttrValue.setAttrId(attrInfo.getId());
                 pmsBaseAttrValueMapper.insertSelective(pmsBaseAttrValue);
             }
         }
